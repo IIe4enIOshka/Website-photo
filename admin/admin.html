@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фото</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link type="image/png" rel="icon" href="../ico/favicon/favicon.ico">
+
+</head>
+<body>
+
+	<form id="form" method="POST" action="../scripts/store_image.php" enctype="multipart/form-data">
+		<input id="nameDist" type="text" placeholder="Название папки" name="nameDist">
+		<input id="js-file" type="file" multiple name="myimage" accept=".jpg,.png">
+		<input type="submit" name="submit_image" value="Upload">
+		<br>
+		<br>
+		<progress id="progressbar" value="0" max="100"></progress>
+	</form>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+				<nav class="nav flex-column">
+					<a class="nav-link" href="../index.html">Главная</a>
+					<a class="nav-link" href="admin.html">Админка</a>
+				</nav>
+				
+			</div>
+			<div class="col-sm-10 folder">
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/salvattore.min.js"></script>
+	<script type="text/javascript" src="../js/loadDist.js"></script>
+	<script type="text/javascript" src="../js/addImages.js"></script>
+	
+</body>
+</html>
